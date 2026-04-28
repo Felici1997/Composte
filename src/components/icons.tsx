@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
-const IconWrapper = ({ children, className = "" }) => (
+interface IconWrapperProps {
+  children: ReactNode;
+  className?: string;
+}
+
+const IconWrapper = ({ children, className = "" }: IconWrapperProps) => (
   <svg 
     xmlns="http://www.w3.org/2000/svg" 
     width="24" 
